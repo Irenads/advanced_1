@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test_№2_Diachenko</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <!-- Modal for text color -->
+    <div id="myModalTextColor" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chose text color</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="boxColor">
+                        <div class="boxTextColor" style="background-color: rgb(129, 2, 2)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(184, 61, 4)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(233, 233, 12)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(100, 211, 9)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(3, 112, 17)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(10, 211, 134)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(12, 161, 154)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(18, 119, 207)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(2, 36, 129)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(20, 1, 102)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(139, 8, 214)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(82, 6, 97)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(59, 11, 73)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(238, 57, 223)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(179, 3, 156)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(228, 10, 111)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(65, 0, 22)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(241, 5, 5)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(245, 243, 243)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(0, 0, 0)"></div>
+                        <div class="boxTextColor" style="background-color: rgb(121, 120, 120)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for background color -->
+    <div id="myModalBGColor" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chose background color or image</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#description">Colors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#characteristics">Images</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#opinion">Files</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in show" id="description">
+                            <div class="boxColor">
+                                <div class="boxBGColor" style="background-color: rgb(129, 2, 2)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(184, 61, 4)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(233, 233, 12)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(100, 211, 9)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(3, 112, 17)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(10, 211, 134)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(12, 161, 154)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(18, 119, 207)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(2, 36, 129)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(20, 1, 102)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(139, 8, 214)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(82, 6, 97)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(39, 1, 51)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(238, 57, 223)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(179, 3, 156)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(228, 10, 111)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(65, 0, 22)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(241, 5, 5)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(245, 243, 243)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(0, 0, 0)"></div>
+                                <div class="boxBGColor" style="background-color: rgb(121, 120, 120)"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="characteristics">
+                            <div class="images">
+                                <div class="image" style="background-image: url(images/1.jpg)"></div>
+                                <div class="image" style="background-image: url(images/2.jpg)"></div>
+                                <div class="image" style="background-image: url(images/3.jpg)"></div>
+                                <div class="image" style="background-image: url(images/4.jpg)"></div>
+                                <div class="image" style="background-image: url(images/5.jpg)"></div>
+                                <div class="image" style="background-image: url(images/6.jpg)"></div>
+                                <div class="image" style="background-image: url(images/7.jpg)"></div>
+                                <div class="image" style="background-image: url(images/8.jpg)"></div>
+                                <div class="image" style="background-image: url(images/9.jpg)"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="opinion">
+                            <br>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal sing in -->
+    <div id="myModalSignIn" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign In</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation sing" novalidate>
+                        <div class="col-md-12">
+                            <label for="login">Login</label>
+                            <input type="text" class="form-control" id="login" placeholder="Login here..."
+                                required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password"
+                                placeholder="Password here..." required>
+                        </div>
+                        <p class="invalidValue">invalid value</p>
+                        <p class="invalidSingIn">Please check your login or password</p>
+                        <button type="button" class="btn btn-secondary btn-block form-control signIn" style="margin-top: 40px;">Sign In</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for table -->
+    <div id="myModalTable" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create table</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form name="table" class="table">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="countTR">Count TR:</label>
+                                <input type="number" name="countTR" class="form-control" id="countTR"
+                                    placeholder=" Count TR:">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="countTD">Count TD:</label>
+                                <input type="number" name="countTD" class="form-control" id="countTD"
+                                    placeholder=" Count TD:">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="tdWidth">Width of TD:</label>
+                                <input type="number" name="tdWidth" class="form-control" id="tdWidth"
+                                    placeholder=" Width of TD:">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="tdHeight">Height of TD:</label>
+                                <input type="number" name="tdHeight" class="form-control" id="tdHeight"
+                                    placeholder=" Height of TD:">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="borderWidht">Widht of border:</label>
+                                <input type="number" name="borderWidht" id="borderWidht" class="form-control"
+                                    placeholder="Widht of border:">
+                            </div>
+                            <div class="form-group col">
+                                <label for="borderType">Style of border:</label>
+                                <select name="borderType" id="borderType" class="form-control">
+                                    <option selected disable value="defolt">Choose style</option>
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="double">double</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="groove">groove</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="inset">inset</option>
+                                    <option value="outset">outset</option>
+                                </select>
+                            </div>
+                            <div class="form-group col">
+                                <label for="borderColor">Color of border:</label>
+                                <select name="borderColor" class="form-control" id="borderColor">
+                                    <option selected disable value="defolt">Choose color</option>
+                                    <option value="black">black</option>
+                                    <option value="red">red</option>
+                                    <option value="blue">blue</option>
+                                    <option value="green">green</option>
+                                    <option value="yellow">yellow</option>
+                                    <option value="white">white</option>
+                                    <option value="gray">gray</option>
+                                    <option value="pink">pink</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="invalid">some value no valid</p>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-danger col reset" >Reset</button>
+                            <button type="button" class="btn btn-success col createTable">Create table</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for ol -->
+    <div id="myModalCreateOl" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create Ol</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation ol" novalidate>
+                        <div class="col-md-12">
+                            <label for="countLi">Count Li:</label>
+                            <input type="text" name="countLi" class="form-control" id="countLi" placeholder="Count Li:"
+                                required>
+                        </div>
+                        <div class="form-group col">
+                            <label for="olType">Type mark of list:</label>
+                            <select name="olType" id="olType" class="form-control">
+                                <option selected disable value="defolt">Choose ol type mark</option>
+                                <option value="1">1</option>
+                                <option value="I">I</option>
+                                <option value="i">i</option>
+                                <option value="A">A</option>
+                                <option value="a">a</option>
+                            </select>
+                        </div>
+                        <p class="invalid">invalid value</p>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-danger col reset">Reset</button>
+                            <button type="button" class="btn btn-success col createOlLi">Create list</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for ul -->
+    <div id="myModalCreateUl" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create Ul</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation ul" novalidate>
+                        <div class="col-md-12">
+                            <label for="countUlLi">Count Li item:</label>
+                            <input type="number" name="countLi" class="form-control" id="countUlLi"
+                                placeholder="Type here..." required>
+                        </div>
+                        <div class="form-group col">
+                            <label for="ulType">Type mark of list:</label>
+                            <select name="ulType" id="ulType" class="form-control">
+                                <option selected disable value="defolt">Choose ul type mark</option>
+                                <option value="circle">circle</option>
+                                <option value="disc">disc</option>
+                                <option value="square">square</option>
+                            </select>
+                        </div>
+                        <p class="invalid">invalid value</p>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-danger col reset">Reset</button>
+                            <button type="button" class="btn btn-success col createUlLi" >Create list</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <form name="redactor" class="redactor  first">
+        <div class="padding">
+            <button type="button" class="btn btn-light" name="slash">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-code-slash" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="btn-group padding" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-light" name="bold">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-type-bold" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.21 13c2.106 0 3.412-1.087 3.412-2.823 0-1.306-.984-2.283-2.324-2.386v-.055a2.176 2.176 0 0 0 1.852-2.14c0-1.51-1.162-2.46-3.014-2.46H3.843V13H8.21zM5.908 4.674h1.696c.963 0 1.517.451 1.517 1.244 0 .834-.629 1.32-1.73 1.32H5.908V4.673zm0 6.788V8.598h1.73c1.217 0 1.88.492 1.88 1.415 0 .943-.643 1.449-1.832 1.449H5.907z" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-light" name="italic">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-type-italic" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.991 11.674L9.53 4.455c.123-.595.246-.71 1.347-.807l.11-.52H7.211l-.11.52c1.06.096 1.128.212 1.005.807L6.57 11.674c-.123.595-.246.71-1.346.806l-.11.52h3.774l.11-.52c-1.06-.095-1.129-.211-1.006-.806z" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-light" name="underlined">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-type-underline" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.313 3.136h-1.23V9.54c0 2.105 1.47 3.623 3.917 3.623s3.917-1.518 3.917-3.623V3.136h-1.23v6.323c0 1.49-.978 2.57-2.687 2.57-1.709 0-2.687-1.08-2.687-2.57V3.136z" />
+                    <path fill-rule="evenodd" d="M12.5 15h-9v-1h9v1z" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-light" name="crossOut">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-type-strikethrough" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.527 13.164c-2.153 0-3.589-1.107-3.705-2.81h1.23c.144 1.06 1.129 1.703 2.544 1.703 1.34 0 2.31-.705 2.31-1.675 0-.827-.547-1.374-1.914-1.675L8.046 8.5h3.45c.468.437.675.994.675 1.697 0 1.826-1.436 2.967-3.644 2.967zM6.602 6.5H5.167a2.776 2.776 0 0 1-.099-.76c0-1.627 1.436-2.768 3.48-2.768 1.969 0 3.39 1.175 3.445 2.85h-1.23c-.11-1.08-.964-1.743-2.25-1.743-1.23 0-2.18.602-2.18 1.607 0 .31.083.581.27.814z" />
+                    <path fill-rule="evenodd" d="M15 8.5H1v-1h14v1z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="btn-group padding" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-light" name="left" style="background-color: rgb(226, 230, 234);">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-text-left" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-light" name="center">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-text-center" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-light" name="right">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-text-right" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="btn-group padding" role="group" aria-label="Button group with nested dropdown">
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-type" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.244 13.081l.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z" />
+                    </svg>
+                </button>
+                <div class="dropdown-menu fontFamily" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#" style="font-family: Arial">Arial</a>
+                    <a class="dropdown-item" href="#" style="font-family: Georgia">Georgia</a>
+                    <a class="dropdown-item" href="#" style="font-family: Impact">Impact</a>
+                    <a class="dropdown-item" href="#" style="font-family: Tahoma">Tahoma</a>
+                    <a class="dropdown-item" href="#" style="font-family: Times New Roman">Times New Roman</a>
+                    <a class="dropdown-item" href="#" style="font-family: Verdana">Verdana</a>
+                </div>
+            </div>
+
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-fonts" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.258 3H3.747l-.082 2.46h.479c.26-1.544.758-1.783 2.693-1.845l.424-.013v7.827c0 .663-.144.82-1.3.923v.52h4.082v-.52c-1.162-.103-1.306-.26-1.306-.923V3.602l.43.013c1.935.062 2.434.301 2.694 1.846h.479L12.258 3z" />
+                    </svg>
+                </button>
+                <div class="dropdown-menu fontSize" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#" style="font-size: 10px">12px</a>
+                    <a class="dropdown-item" href="#" style="font-size: 11px">14px</a>
+                    <a class="dropdown-item" href="#" style="font-size: 12px">16px</a>
+                    <a class="dropdown-item" href="#" style="font-size: 13px">18px</a>
+                    <a class="dropdown-item" href="#" style="font-size: 14px">20px</a>
+                    <a class="dropdown-item" href="#" style="font-size: 15px">22px</a>
+                    <a class="dropdown-item" href="#" style="font-size: 16px">25px</a>
+                    <a class="dropdown-item" href="#" style="font-size: 18px">30px</a>
+
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-light" name="textColor" data-toggle="modal"
+                data-target="#myModalTextColor">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-brush" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.213 1.018a.572.572 0 0 1 .756.05.57.57 0 0 1 .057.746C15.085 3.082 12.044 7.107 9.6 9.55c-.71.71-1.42 1.243-1.952 1.596-.508.339-1.167.234-1.599-.197-.416-.416-.53-1.047-.212-1.543.346-.542.887-1.273 1.642-1.977 2.521-2.35 6.476-5.44 7.734-6.411z" />
+                    <path d="M7 12a2 2 0 0 1-2 2c-1 0-2 0-3.5-.5s.5-1 1-1.5 1.395-2 2.5-2a2 2 0 0 1 2 2z" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-light" name="bgColor" data-toggle="modal"
+                data-target="#myModalBGColor">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-image-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094L15.002 9.5V13a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-1zm5-6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                </svg>
+            </button>
+        </div>
+
+        <button type="button" class="btn btn-light" name="login" data-toggle="modal" data-target="#myModalSignIn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z" />
+                <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z" />
+            </svg>
+        </button>
+    </form>
+
+
+
+    <form class="redactor second">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-light" name="saveCode">
+                save
+            </button>
+            <button type="button" class="btn btn-light" name="createTable" data-toggle="modal"
+                data-target="#myModalTable">
+                table
+            </button>
+            <button type="button" class="btn btn-light" name="createOl" data-toggle="modal"
+                data-target="#myModalCreateOl">
+                Ol
+            </button>
+            <button type="button" class="btn btn-light" name="createUl" data-toggle="modal"
+                data-target="#myModalCreateUl">
+                Ul
+            </button>
+        </div>
+    </form>
+
+
+
+    <textarea name="" id="" cols="100vh" rows="100vh"></textarea>
+
+    <div class="conteiner">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro dolorem nisi similique!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro dolorem nisi similique!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro dolorem nisi similique!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro dolorem nisi similique!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro dolorem nisi similique!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro dolorem nisi similique!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum porro dolorem nisi similique!</p>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
